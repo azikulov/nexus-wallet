@@ -27,10 +27,15 @@ export default function SeedPhrase() {
           theme='secondary'
           className={styles['navigation__back-button']}
         >
-          <Image src={ArrowLeftIcon} alt='' />
+          <ArrowLeftIcon />
         </Button>
 
-        <Button className={styles['navigation__next-button']}>Home</Button>
+        <Button
+          onClick={() => router.push('/wallet')}
+          className={styles['navigation__next-button']}
+        >
+          Home
+        </Button>
       </div>
     </div>
   );

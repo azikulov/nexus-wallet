@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/Button';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import LogoIcon from '@/assets/icons/logo.svg';
+import LogoIcon from '@/assets/icons/logo.png';
 import styles from './page.module.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';

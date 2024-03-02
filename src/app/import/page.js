@@ -33,7 +33,7 @@ export default function SeedPhrase() {
 
       <div className={styles['navigation']}>
         <button onClick={() => router.back()} className={styles['navigation__back-button']}>
-          <Image src={ArrowLeftIcon} alt='' />
+          <ArrowLeftIcon />
         </button>
 
         <Button
