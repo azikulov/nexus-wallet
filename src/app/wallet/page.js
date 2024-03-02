@@ -12,6 +12,7 @@ import { Button } from '@/components/Button';
 import { Token } from '@/components/Token';
 import { useState } from 'react';
 import { Transaction } from '@/components/Transaction';
+import { NFT } from '@/components/NFT';
 
 export default function Wallet() {
   const [nav, setNav] = useState('tokens');
@@ -104,7 +105,27 @@ export default function Wallet() {
               <Token currency={'dai'} />
             </div>
           ) : nav === 'nfts' ? (
-            <div className=''>NFTs</div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr 1fr',
+                gap: '0.5rem',
+                paddingInline: '0.625rem',
+              }}
+            >
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+              <NFT />
+            </div>
           ) : (
             <div className=''>
               <Transaction status={'получено'} amount={'521.20'} />
