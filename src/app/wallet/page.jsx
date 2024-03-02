@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { Button } from '@/components/Button';
 import { Token } from '@/components/Token';
 import { useState } from 'react';
+import { Transaction } from '@/components/Transaction';
 
 export default function Wallet() {
   const [nav, setNav] = useState('tokens');
@@ -121,39 +122,6 @@ export default function Wallet() {
           )}
         </div>
       </div>
-    </div>
-  );
-}
-
-function getColorByStatus({ status }) {
-  if (status === 'получено') return '#39CC83';
-  if (status === 'отправлено') return '#8E8E93';
-  return '#FF5454';
-}
-
-function Transaction({ status, amount }) {
-  return (
-    <div className={styles['transaction']}>
-      <div className={styles['transaction__image']}>
-        <Image src={UserImage} alt='' />
-      </div>
-
-      <p className={styles['transaction__name']}>Ilya grishin</p>
-      <p className={styles['transaction__datetime']}>12 Янв в 12:05</p>
-
-      <p
-        style={{ '--color': getColorByStatus({ status }) }}
-        className={styles['transaction__amount']}
-      >
-        {status === 'получено' && '+'}
-        {amount} ton
-      </p>
-      <p
-        style={{ '--color': getColorByStatus({ status }) }}
-        className={styles['transaction__status']}
-      >
-        {status}
-      </p>
     </div>
   );
 }
