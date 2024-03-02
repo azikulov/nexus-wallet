@@ -58,7 +58,11 @@ export default function Start() {
         >
           Создать новый кошелек
         </Button>
-        <Button className={styles['start-actions__button']} theme='secondary'>
+        <Button
+          onClick={() => router.push('/import')}
+          className={styles['start-actions__button']}
+          theme='secondary'
+        >
           У меня уже есть кошелек
         </Button>
       </div>
