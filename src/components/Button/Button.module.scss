@@ -9,21 +9,21 @@
   border-radius: 0.875rem;
 
   &.primary {
-    color: rgb(255, 255, 255);
-    background: rgb(20, 112, 245);
+    color: var(--color, rgb(255, 255, 255));
+    background: var(--background, rgb(20, 112, 245));
   }
 
   &.secondary {
-    color: rgb(20, 112, 245);
-    background: rgba(20, 112, 245, 0.08);
+    color: var(--color, rgb(20, 112, 245));
+    background: var(--background, rgba(20, 112, 245, 0.08));
   }
 
   &.link {
-    color: rgb(20, 112, 245);
+    color: var(--color, rgb(20, 112, 245));
   }
 
   &:disabled {
-    background: rgb(199, 199, 204);
-    color: rgb(142, 142, 147);
+    background: var(--background, rgb(199, 199, 204));
+    color: var(--color, rgb(142, 142, 147));
   }
 }
