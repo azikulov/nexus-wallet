@@ -65,7 +65,7 @@ export default function Settings() {
       <br />
 
       <div className={styles['nav']}>
-        <Link href='#' className={styles['nav__link']}>
+        <Link href='/settings/seed-phrase' className={styles['nav__link']}>
           <div className={styles['nav__link-left']}>
             <SeedPhraseIcon />
             <span>Seed Phrase</span>
