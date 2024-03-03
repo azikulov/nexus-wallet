@@ -13,8 +13,10 @@ import { Token } from '@/components/Token';
 import { useState } from 'react';
 import { Transaction } from '@/components/Transaction';
 import { NFT } from '@/components/NFT';
+import { useRouter } from 'next/navigation';
 
 export default function Wallet() {
+  const router = useRouter();
   const [nav, setNav] = useState('tokens');
 
   return (
@@ -47,11 +49,24 @@ export default function Wallet() {
         </div>
 
         <div className={styles['wallet-actions']}>
-          <Button className={styles['wallet-actions__button-send']}>Отправить</Button>
-          <Button className={styles['wallet-actions__button-replenish']} theme='secondary'>
+          <Button
+            onClick={() => router.push('/wallet/send')}
+            className={styles['wallet-actions__button-send']}
+          >
+            Отправить
+          </Button>
+          <Button
+            onClick={() => router.push('/wallet/buy')}
+            className={styles['wallet-actions__button-replenish']}
+            theme='secondary'
+          >
             Пополнить
           </Button>
-          <Button className={styles['wallet-actions__button-swap']} theme='secondary'>
+          <Button
+            onClick={() => router.push('/wallet/swap')}
+            className={styles['wallet-actions__button-swap']}
+            theme='secondary'
+          >
             <SwapIcon />
           </Button>
         </div>
