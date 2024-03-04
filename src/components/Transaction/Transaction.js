@@ -25,6 +25,7 @@ export function Transaction({ status, amount }) {
         {status === 'получено' && '+'}
         {amount} ton
       </p>
+
       <p
         style={{ '--color': getColorByStatus({ status }) }}
         className={styles['transaction__status']}

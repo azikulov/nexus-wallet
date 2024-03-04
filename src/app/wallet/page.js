@@ -128,18 +128,18 @@ export default function Wallet() {
                 paddingInline: '0.625rem',
               }}
             >
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
-              <NFT />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
+              <NFT onClick={() => router.push('/wallet/random-nft')} />
             </div>
           ) : (
             <div className=''>
